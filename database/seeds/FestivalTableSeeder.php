@@ -19,7 +19,7 @@ class FestivalTableSeeder extends Seeder
 
         for($i = 0; $i < 20; $i++){
 
-            $festival = new festival();
+            $festival = new Festival();
             $festival->nome_evento = $faker->name();
             $festival->label = $faker->name();
             $festival->outdoor = $faker->boolean();

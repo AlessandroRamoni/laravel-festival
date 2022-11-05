@@ -15,7 +15,7 @@ class CreateFestivalTable extends Migration
     {
         Schema::create('festival', function (Blueprint $table) {
             $table->id();
-            $table->string('nome_evento', 10);
+            $table->string('nome_evento', 100);
             $table->text('label');
             $table->boolean('outdoor');
             $table->string('indirizzo', 100);
