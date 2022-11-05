@@ -2,6 +2,10 @@
 
 use Illuminate\Database\Seeder;
 
+use App\models\Festival;
+
+use Faker\Generator as Faker;
+
 class FestivalTableSeeder extends Seeder
 {
     /**
@@ -9,8 +13,21 @@ class FestivalTableSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run(Faker $faker)
     {
         //
+
+        for($i = 0; $i < 20; $i++){
+
+            $festival = new festival();
+            $festival->nome_evento = $faker->name();
+            $festival->label = $faker->name();
+            $festival->outdoor = $faker->boolean();
+            $festival->indirizzo = $faker->address();
+            $festival->quando = $faker->date();
+
+            $festival->save();
+
+        }
     }
 }
