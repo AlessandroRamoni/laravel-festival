@@ -18,6 +18,7 @@
             @foreach ($festival as $event)
                 <li>{{ $event['nome_evento'] }}</li>
                 <li>{{ $event['label'] }}</li>
+                <li>{{ $event['outdoor'] }}</li>
             @endforeach
         </ul>
     </div>
