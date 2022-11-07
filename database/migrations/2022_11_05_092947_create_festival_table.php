@@ -34,3 +34,4 @@ class CreateFestivalTable extends Migration
         Schema::dropIfExists('festival');
     }
 }
+
