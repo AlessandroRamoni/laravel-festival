@@ -13,6 +13,15 @@
 
     <h1>THUNDERDOME</h1>
 
+    <div>
+        <ul>
+            @foreach ($festival as $event)
+                <li>{{ $event['nome_evento'] }}</li>
+                <li>{{ $event['label'] }}</li>
+            @endforeach
+        </ul>
+    </div>
+
 </body>
 
 </html>

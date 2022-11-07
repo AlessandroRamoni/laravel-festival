@@ -10,7 +10,7 @@ class FestivalController extends Controller
 {
     //
     public function index(){
-        $comics = Comic::all();
-        return view('home', compact('comics'));
+        $festival = Festival::all();
+        return view('home', compact('festival'));
     }
 }
