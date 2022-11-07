@@ -2,9 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
 }
 
 
 h1 {
     color: darkgoldenrod;
+}
+
+.contenitore table {
+    margin: 0 auto;
+}
+
+.contenitore table thead tr th {
+    padding: 4px;
+    font-size: 1.4em;
 }

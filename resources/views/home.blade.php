@@ -20,6 +20,7 @@
                     <th>nome evento</th>
                     <th>label</th>
                     <th>outdoor</th>
+                    <th>quando</th>
                 </tr>
             </thead>
 
@@ -28,6 +29,7 @@
                     <td>{{ $event['nome_evento'] }}</td>
                     <td>{{ $event['label'] }}</td>
                     <td>{{ $event['outdoor'] }}</td>
+                    <td>{{ $event['quando'] }}</td>
                 </tr>
             @endforeach
 
